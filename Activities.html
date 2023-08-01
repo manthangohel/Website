@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://jsuites.net/v4/jsuites.js"></script>
+  <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+</head>
+<style>
+  .divv {
+    background-image: url("https://assets.bucketlistly.blog/sites/5adf778b6eabcc00190b75b1/content_entry5b155bed5711a8176e9f9783/5c4fbe2246025317508def41/files/nepal-everest-base-camp-everest-travel-photo-20190128094442660-main-image.jpg");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    position: relative;
+  }
+
+  .img_1 {
+    background-image: url("https://zen.wego.com/marketing/carousel/Banner01_281889863.jpg");
+    height: 200px;
+    width: 350px;
+    background-size: cover;
+    margin-top: 15%;
+    /* margin-left: 4%; */
+    border-radius: 5%;
+  }
+
+  .img_2 {
+    background-image: url("https://zen.wego.com/marketing/carousel/Goibibo_En_281889974.jpg");
+    height: 200px;
+    width: 350px;
+    background-size: cover;
+    margin-top: 15%;
+    /* margin-left: 4%; */
+    border-radius: 5%;
+  }
+
+  .img_3 {
+    background-image: url("https://zen.wego.com/marketing/carousel/EaseMyTrip_281889647.jpg");
+    height: 200px;
+    width: 350px;
+    background-size: cover;
+    margin-top: 15%;
+    /* margin-left: 4%; */
+    border-radius: 5%;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link container text-dark " href="#"
+            style="font-size: x-large;font-weight: bolder; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">wego</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-plane-up fa-xs text-success container" style="transform: rotateZ(45deg);"></i>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4 ms-5 text-dark mt-2" href="websiteBootstrap.html">Flight</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4 ms-5 text-dark mt-2" href="#">Hotels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4 ms-5 text-dark mt-2" href="Activities.html">Activities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4 ms-5  text-dark mt-2" href="train.html">Trains</a>
+        </li>
+      </ul>
+      <div id="dropdown">
+        <script>
+          var countries = [
+            { "text": "Afghanistan", "value": "AF" },
+            { "text": "Åland Islands", "value": "AX" },
+            { "text": "Albania", "value": "AL" },
+            { "text": "Algeria", "value": "DZ" },
+            { "text": "American Samoa", "value": "AS" },
+            { "text": "Andorra", "value": "AD" },
+            { "text": "Angola", "value": "AO" },
+            { "text": "Anguilla", "value": "AI" },
+            { "text": "Antarctica", "value": "AQ" },
+            { "text": "Antigua and Barbuda", "value": "AG" },
+            { "text": "Argentina", "value": "AR" },
+            { "text": "Armenia", "value": "AM" },
+            { "text": "Aruba", "value": "AW" },
+            { "text": "Australia", "value": "AU" },
+            { "text": "Austria", "value": "AT" },
+            { "text": "Azerbaijan", "value": "AZ" },
+            { "text": "Bahamas", "value": "BS" },
+            { "text": "Bahrain", "value": "BH" },
+            { "text": "Bangladesh", "value": "BD" },
+            { "text": "Barbados", "value": "BB" },
+            { "text": "Belarus", "value": "BY" },
+            { "text": "Belgium", "value": "BE" },
+            { "text": "Belize", "value": "BZ" },
+            { "text": "Benin", "value": "BJ" },
+            { "text": "Bermuda", "value": "BM" },
+            { "text": "Bhutan", "value": "BT" },
+            { "text": "Bolivia", "value": "BO" },
+            { "text": "Bosnia and Herzegovina", "value": "BA" },
+            { "text": "Botswana", "value": "BW" },
+            { "text": "Bouvet Island", "value": "BV" },
+            { "text": "Brazil", "value": "BR" },
+            { "text": "British Indian Ocean Territory", "value": "IO" },
+            { "text": "Brunei Darussalam", "value": "BN" },
+            { "text": "Bulgaria", "value": "BG" },
+            { "text": "Burkina Faso", "value": "BF" },
+            { "text": "Burundi", "value": "BI" },
+            { "text": "Cambodia", "value": "KH" },
+            { "text": "Cameroon", "value": "CM" },
+            { "text": "Canada", "value": "CA" },
+            { "text": "Cape Verde", "value": "CV" },
+            { "text": "Cayman Islands", "value": "KY" },
+            { "text": "Central African Republic", "value": "CF" },
+            { "text": "Chad", "value": "TD" },
+            { "text": "Chile", "value": "CL" },
+            { "text": "China", "value": "CN" },
+            { "text": "Christmas Island", "value": "CX" },
+            { "text": "Cocos (Keeling) Islands", "value": "CC" },
+            { "text": "Colombia", "value": "CO" },
+            { "text": "Comoros", "value": "KM" },
+            { "text": "Congo", "value": "CG" },
+            { "text": "Congo, The Democratic Republic of the", "value": "CD" },
+            { "text": "Cook Islands", "value": "CK" },
+            { "text": "Costa Rica", "value": "CR" },
+            { "text": "Cote D'Ivoire", "value": "CI" },
+            { "text": "Croatia", "value": "HR" },
+            { "text": "Cuba", "value": "CU" },
+            { "text": "Cyprus", "value": "CY" },
+            { "text": "Czech Republic", "value": "CZ" },
+            { "text": "Denmark", "value": "DK" },
+            { "text": "Djibouti", "value": "DJ" },
+            { "text": "Dominica", "value": "DM" },
+            { "text": "Dominican Republic", "value": "DO" },
+            { "text": "Ecuador", "value": "EC" },
+            { "text": "Egypt", "value": "EG" },
+            { "text": "El Salvador", "value": "SV" },
+            { "text": "Equatorial Guinea", "value": "GQ" },
+            { "text": "Eritrea", "value": "ER" },
+            { "text": "Estonia", "value": "EE" },
+            { "text": "Ethiopia", "value": "ET" },
+            { "text": "Falkland Islands (Malvinas)", "value": "FK" },
+            { "text": "Faroe Islands", "value": "FO" },
+            { "text": "Fiji", "value": "FJ" },
+            { "text": "Finland", "value": "FI" },
+            { "text": "France", "value": "FR" },
+            { "text": "French Guiana", "value": "GF" },
+            { "text": "French Polynesia", "value": "PF" },
+            { "text": "French Southern Territories", "value": "TF" },
+            { "text": "Gabon", "value": "GA" },
+            { "text": "Gambia", "value": "GM" },
+            { "text": "Georgia", "value": "GE" },
+            { "text": "Germany", "value": "DE" },
+            { "text": "Ghana", "value": "GH" },
+            { "text": "Gibraltar", "value": "GI" },
+            { "text": "Greece", "value": "GR" },
+            { "text": "Greenland", "value": "GL" },
+            { "text": "Grenada", "value": "GD" },
+            { "text": "Guadeloupe", "value": "GP" },
+            { "text": "Guam", "value": "GU" },
+            { "text": "Guatemala", "value": "GT" },
+            { "text": "Guernsey", "value": "GG" },
+            { "text": "Guinea", "value": "GN" },
+            { "text": "Guinea-Bissau", "value": "GW" },
+            { "text": "Guyana", "value": "GY" },
+            { "text": "Haiti", "value": "HT" },
+            { "text": "Heard Island and Mcdonald Islands", "value": "HM" },
+            { "text": "Holy See (Vatican City State)", "value": "VA" },
+            { "text": "Honduras", "value": "HN" },
+            { "text": "Hong Kong", "value": "HK" },
+            { "text": "Hungary", "value": "HU" },
+            { "text": "Iceland", "value": "IS" },
+            { "text": "India", "value": "IN" },
+            { "text": "Indonesia", "value": "ID" },
+            { "text": "Iran, Islamic Republic Of", "value": "IR" },
+            { "text": "Iraq", "value": "IQ" },
+            { "text": "Ireland", "value": "IE" },
+            { "text": "Isle of Man", "value": "IM" },
+            { "text": "Israel", "value": "IL" },
+            { "text": "Italy", "value": "IT" },
+            { "text": "Jamaica", "value": "JM" },
+            { "text": "Japan", "value": "JP" },
+            { "text": "Jersey", "value": "JE" },
+            { "text": "Jordan", "value": "JO" },
+            { "text": "Kazakhstan", "value": "KZ" },
+            { "text": "Kenya", "value": "KE" },
+            { "text": "Kiribati", "value": "KI" },
+            { "text": "Korea, Democratic People'S Republic of", "value": "KP" },
+            { "text": "Korea, Republic of", "value": "KR" },
+            { "text": "Kuwait", "value": "KW" },
+            { "text": "Kyrgyzstan", "value": "KG" },
+            { "text": "Lao People'S Democratic Republic", "value": "LA" },
+            { "text": "Latvia", "value": "LV" },
+            { "text": "Lebanon", "value": "LB" },
+            { "text": "Lesotho", "value": "LS" },
+            { "text": "Liberia", "value": "LR" },
+            { "text": "Libyan Arab Jamahiriya", "value": "LY" },
+            { "text": "Liechtenstein", "value": "LI" },
+            { "text": "Lithuania", "value": "LT" },
+            { "text": "Luxembourg", "value": "LU" },
+            { "text": "Macao", "value": "MO" },
+            { "text": "Macedonia, The Former Yugoslav Republic of", "value": "MK" },
+            { "text": "Madagascar", "value": "MG" },
+            { "text": "Malawi", "value": "MW" },
+            { "text": "Malaysia", "value": "MY" },
+            { "text": "Maldives", "value": "MV" },
+            { "text": "Mali", "value": "ML" },
+            { "text": "Malta", "value": "MT" },
+            { "text": "Marshall Islands", "value": "MH" },
+            { "text": "Martinique", "value": "MQ" },
+            { "text": "Mauritania", "value": "MR" },
+            { "text": "Mauritius", "value": "MU" },
+            { "text": "Mayotte", "value": "YT" },
+            { "text": "Mexico", "value": "MX" },
+            { "text": "Micronesia, Federated States of", "value": "FM" },
+            { "text": "Moldova, Republic of", "value": "MD" },
+            { "text": "Monaco", "value": "MC" },
+            { "text": "Mongolia", "value": "MN" },
+            { "text": "Montserrat", "value": "MS" },
+            { "text": "Morocco", "value": "MA" },
+            { "text": "Mozambique", "value": "MZ" },
+            { "text": "Myanmar", "value": "MM" },
+            { "text": "Namibia", "value": "NA" },
+            { "text": "Nauru", "value": "NR" },
+            { "text": "Nepal", "value": "NP" },
+            { "text": "Netherlands", "value": "NL" },
+            { "text": "Netherlands Antilles", "value": "AN" },
+            { "text": "New Caledonia", "value": "NC" },
+            { "text": "New Zealand", "value": "NZ" },
+            { "text": "Nicaragua", "value": "NI" },
+            { "text": "Niger", "value": "NE" },
+            { "text": "Nigeria", "value": "NG" },
+            { "text": "Niue", "value": "NU" },
+            { "text": "Norfolk Island", "value": "NF" },
+            { "text": "Northern Mariana Islands", "value": "MP" },
+            { "text": "Norway", "value": "NO" },
+            { "text": "Oman", "value": "OM" },
+            { "text": "Pakistan", "value": "PK" },
+            { "text": "Palau", "value": "PW" },
+            { "text": "Palestinian Territory, Occupied", "value": "PS" },
+            { "text": "Panama", "value": "PA" },
+            { "text": "Papua New Guinea", "value": "PG" },
+            { "text": "Paraguay", "value": "PY" },
+            { "text": "Peru", "value": "PE" },
+            { "text": "Philippines", "value": "PH" },
+            { "text": "Pitcairn", "value": "PN" },
+            { "text": "Poland", "value": "PL" },
+            { "text": "Portugal", "value": "PT" },
+            { "text": "Puerto Rico", "value": "PR" },
+            { "text": "Qatar", "value": "QA" },
+            { "text": "Reunion", "value": "RE" },
+            { "text": "Romania", "value": "RO" },
+            { "text": "Russian Federation", "value": "RU" },
+            { "text": "RWANDA", "value": "RW" },
+            { "text": "Saint Helena", "value": "SH" },
+            { "text": "Saint Kitts and Nevis", "value": "KN" },
+            { "text": "Saint Lucia", "value": "LC" },
+            { "text": "Saint Pierre and Miquelon", "value": "PM" },
+            { "text": "Saint Vincent and the Grenadines", "value": "VC" },
+            { "text": "Samoa", "value": "WS" },
+            { "text": "San Marino", "value": "SM" },
+            { "text": "Sao Tome and Principe", "value": "ST" },
+            { "text": "Saudi Arabia", "value": "SA" },
+            { "text": "Senegal", "value": "SN" },
+            { "text": "Serbia and Montenegro", "value": "CS" },
+            { "text": "Seychelles", "value": "SC" },
+            { "text": "Sierra Leone", "value": "SL" },
+            { "text": "Singapore", "value": "SG" },
+            { "text": "Slovakia", "value": "SK" },
+            { "text": "Slovenia", "value": "SI" },
+            { "text": "Solomon Islands", "value": "SB" },
+            { "text": "Somalia", "value": "SO" },
+            { "text": "South Africa", "value": "ZA" },
+            { "text": "South Georgia and the South Sandwich Islands", "value": "GS" },
+            { "text": "Spain", "value": "ES" },
+            { "text": "Sri Lanka", "value": "LK" },
+            { "text": "Sudan", "value": "SD" },
+            { "text": "Suriname", "value": "SR" },
+            { "text": "Svalbard and Jan Mayen", "value": "SJ" },
+            { "text": "Swaziland", "value": "SZ" },
+            { "text": "Sweden", "value": "SE" },
+            { "text": "Switzerland", "value": "CH" },
+            { "text": "Syrian Arab Republic", "value": "SY" },
+            { "text": "Taiwan, Province of China", "value": "TW" },
+            { "text": "Tajikistan", "value": "TJ" },
+            { "text": "Tanzania, United Republic of", "value": "TZ" },
+            { "text": "Thailand", "value": "TH" },
+            { "text": "Timor-Leste", "value": "TL" },
+            { "text": "Togo", "value": "TG" },
+            { "text": "Tokelau", "value": "TK" },
+            { "text": "Tonga", "value": "TO" },
+            { "text": "Trinidad and Tobago", "value": "TT" },
+            { "text": "Tunisia", "value": "TN" },
+            { "text": "Turkey", "value": "TR" },
+            { "text": "Turkmenistan", "value": "TM" },
+            { "text": "Turks and Caicos Islands", "value": "TC" },
+            { "text": "Tuvalu", "value": "TV" },
+            { "text": "Uganda", "value": "UG" },
+            { "text": "Ukraine", "value": "UA" },
+            { "text": "United Arab Emirates", "value": "AE" },
+            { "text": "United Kingdom", "value": "GB" },
+            { "text": "United States", "value": "US", synonym: ['USA', 'United States of America'] },
+            { "text": "United States Minor Outlying Islands", "value": "UM" },
+            { "text": "Uruguay", "value": "UY" },
+            { "text": "Uzbekistan", "value": "UZ" },
+            { "text": "Vanuatu", "value": "VU" },
+            { "text": "Venezuela", "value": "VE" },
+            { "text": "Viet Nam", "value": "VN" },
+            { "text": "Virgin Islands, British", "value": "VG" },
+            { "text": "Virgin Islands, U.S.", "value": "VI" },
+            { "text": "Wallis and Futuna", "value": "WF" },
+            { "text": "Western Sahara", "value": "EH" },
+            { "text": "Yemen", "value": "YE" },
+            { "text": "Zambia", "value": "ZM" },
+            { "text": "Zimbabwe", "value": "ZW" }
+          ];
+
+          for (var i = 0; i < countries.length; i++) {
+            countries[i].image = 'https://cdn.jsdelivr.net/npm/svg-country-flags@1.2.10/svg/' + countries[i].value.toLowerCase() + '.svg';
+          }
+
+          jSuites.dropdown(document.getElementById('dropdown'), {
+            data: countries,
+            autocomplete: true,
+            multiple: true,
+            width: '280px',
+          });
+        </script>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="divv row ">
+    <h1 style="text-align: center;color: white;padding-top: 15%;">Discover the real value of travel</h1>
+  </div>
+  <div class="row col-md-7 container bg-light p-4" style="position: absolute;top: 71%; left: 21%;">
+    <div class="container">
+      <h3>Explore things to do near you</h3><br>
+      <input type="text" placeholder="Search By Destination,Activities Or Attractions" name="search"
+        style="width: 700px; height: 50px;">
+      <button type="button" class="btn btn-success mb-2" style="width: 90px; height: 45px;">Search</button>
+    </div>
+
+    <div class="row container col-md-12">
+
+    </div>
+
+  </div>
+
+  <div class="col-md-12 container">
+
+    <div class="row col-md-12 mt-5 mb-5 container">
+      <h2>Regions Open for Travel</h2>
+    </div>
+    <div class="row col-md-12 container">
+      <div class="card container" style="width:23%; float:left;padding:2px;">
+        <img
+          src="https://assets.wego.com/image/upload/w_480,c_fill,f_auto,fl_lossy,q_auto:low/v1555990166/destinations/country-thumbnail/AE.jpg"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">United Arab Emirates</h4>
+          <div class="card-text">Quarantine-free</h4>
+            <div class="card-text">COVID-19 test not required</div>
+          </div>
+        </div>
+      </div>
+      <div class="card container" style="width:23%; float:left;padding:2px;">
+        <img
+          src="https://assets.wego.com/image/upload/w_480,c_fill,f_auto,fl_lossy,q_auto:low/v1555990166/destinations/country-thumbnail/SA.jpg"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Saudi Arabia</h4>
+          <div class="card-text">Quarantine-free</h4>
+            <div class="card-text">COVID-19 test not required</div>
+          </div>
+        </div>
+      </div>
+      <div class="card container" style="width:23%; float:left;padding:2px;">
+        <img
+          src="https://assets.wego.com/image/upload/w_480,c_fill,f_auto,fl_lossy,q_auto:low/v1555990166/destinations/country-thumbnail/KW.jpg"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Kuwait</h4>
+          <div class="card-text">Quarantine-free</h4>
+            <div class="card-text">COVID-19 test not required</div>
+          </div>
+        </div>
+      </div>
+      <div class="card container" style="width:23%; float:left;padding:2px;">
+        <img
+          src="https://assets.wego.com/image/upload/w_480,c_fill,f_auto,fl_lossy,q_auto:low/v1555990166/destinations/country-thumbnail/QA.jpg"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Qatar</h4>
+          <div class="card-text">Quarantine-free</h4>
+            <div class="card-text">COVID-19 test not required</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row col-md-12 mt-5">
+      <div class="col-md-3">
+        <i class="fa-solid fa-mobile container ms-5"></i>
+        <div class="container"><b>Look no further</b></div>
+        <div>Search all travel deals in one go</div>
+      </div>
+      <div class="col-md-3">
+        <i class="fa-solid fa-money-check-dollar container ms-5"></i>
+        <div class="container"><b>Shop with confidence</b></div>
+        <div>No hidden fees,taxes or surprises</div>
+      </div>
+      <div class="col-md-3">
+        <i class="fa-solid fa-money-check-dollar container ms-5"></i>
+        <div class="container"><b>Pay the way you want</b></div>
+        <div>See who support your prefer methods</div>
+      </div>
+      <div class="col-md-3">
+        <i class="fa-solid fa-mobile container ms-5"></i>
+        <div class="container"><b>Instant booking</b></div>
+        <div> Book with just a couple of clicks</div>
+      </div>
+    </div>
+    <div class="row col-md-12 mt-5 mb-5">
+      <h1>Stories</h1>
+    </div>
+    <div class="row col-md-12 ">
+      <div class="card  container" style="width:30%; float:left;padding:2px;">
+        <img src="https://blog.wego.com/wp-content/uploads/schengen-visa-featured-1080x675.webp" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Schengen Visa 2023: Everything you need to know about Europe's short stay visa</h4>
+        </div>
+      </div>
+
+      <div class="card  container" style="width:30%; float:left;padding:2px;">
+        <img src="https://blog.wego.com/wp-content/uploads/japan-visa-for-indians-featured-1080x675.webp"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Schengen Visa 2023: Everything you need to know about Europe's short stay visa</h4>
+        </div>
+      </div>
+      <div class="card  container" style="width:30%; float:left;padding:2px;">
+        <img src="https://blog.wego.com/wp-content/uploads/saudi-embassy-in-india-featured-1-1080x675.webp"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Schengen Visa 2023: Everything you need to know about Europe's short stay visa</h4>
+        </div>
+      </div>
+    </div>
+    <div class="row col-md-12 mt-5 ">
+      <div class="col-md-3 container">
+        <h4>Popular Airlines</h4>
+      </div>
+      <div class="col-md-2 ">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v210820200/flights/airlines_rectangular/6E.png"
+          alt="" width="100px">
+      </div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v210820200/flights/airlines_rectangular/AI.png"
+          alt="" width="100px">
+      </div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v210820200/flights/airlines_rectangular/SG.png"
+          alt="" width="100px">
+      </div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v210820200/flights/airlines_rectangular/G8.png"
+          alt="" width="100px">
+      </div>
+    </div>
+    <div class="row col-md-12 ">
+      <div class="col-md-3">Book cheap flight on your favrite airline</div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v210820200/flights/airlines_rectangular/UK.png"
+          alt="" width="100px">
+      </div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v210820200/flights/airlines_rectangular/I5.png"
+          alt="" width="100px">
+      </div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v210820200/flights/airlines_rectangular/FZ.png"
+          alt="" width="100px">
+      </div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v210820200/flights/airlines_rectangular/G9.png"
+          alt="" width="100px">
+      </div>
+    </div>
+    <div class="row col-md-12 mt-5 ">
+      <div class="col-md-3 container">
+        <h4>Our Travel Partners</h4>
+      </div>
+      <div class="col-md-2 ">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/makemytrip.com.png"
+          alt="" width="100px">
+      </div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/budgetticket.in.png"
+          alt="" width="100px">
+      </div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/goibibo.com.png"
+          alt="" width="100px">
+      </div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/cleartrip.com.png"
+          alt="" width="100px">
+      </div>
+    </div>
+    <div class="row col-md-12 ">
+      <div class="col-md-3">Wego searches for the best deals on these sites & many more</div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/happyfares.in.png"
+          alt="" width="100px">
+      </div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/yatra.com.png"
+          alt="" width="100px">
+      </div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/easemytrip.com.png"
+          alt="" width="100px">
+      </div>
+      <div class="col-md-2 container">
+        <img
+          src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/bookotrip.com.png"
+          alt="" width="100px">
+      </div>
+    </div>
+    <div class="row mt-5 mb-3">
+      <div class="row col-md-12 ">
+        <h2>Popular Destinations</h2>
+        <div class="col-md-2 card">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/9b/2f/5b/cairo.jpg?w=700&h=500&s=1"
+            alt="" style="height: 200px; width: 200px;">
+          <h4 style="text-align: center;">Cairo</h4>
+        </div>
+        <div class="col-md-2 card">
+          <img
+            src="https://media.cnn.com/api/v1/images/stellar/prod/200310023921-dubai-buildings-skyline.jpg?q=x_648,y_0,h_1688,w_1688,c_crop"
+            alt="" style="height: 200px; width: 200px;">
+          <h4 style="text-align: center;">Dubai</h4>
+        </div>
+        <div class="col-md-2 card">
+          <img src="https://www.savoredjourneys.com/wp-content/uploads/2015/08/abu-dhabi-city-guide-feature.jpg" alt=""
+            style="height: 200px; width: 200px;">
+          <h4 style="text-align: center;">Abu dhabi</h4>
+        </div>
+        <div class="col-md-2 card">
+          <img src="https://a.cdn-hotels.com/gdcs/production6/d781/3bae040b-2afb-4b11-9542-859eeb8ebaf1.jpg" alt=""
+            style="height: 200px; width: 200px;">
+          <h4 style="text-align: center;">Istanbul</h4>
+        </div>
+        <div class="col-md-2 card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/TunisAveHabibBourguiba.jpg" alt=""
+            style="height: 200px; width: 200px;">
+          <h4 style="text-align: center;">Tunis</h4>
+        </div>
+        <div class="col-md-2 card">
+          <img src="https://cdn.britannica.com/70/188370-050-EE6758B6/Muscat-Oman.jpg" alt=""
+            style="height: 200px; width: 200px;">
+          <h4 style="text-align: center;">Muscat</h4>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+    <h1>Trip Ideas</h1>
+    <div class="row col-md-12">
+      <div class="container-fluid">
+        <a href="float.html"> <button type="button"
+            class="btn btn-outline-success me-2 active">Family-Friendly</button></a>
+        <button type="button" class="btn btn-outline-success me-2">Romantic</button>
+        <button type="button" class="btn btn-outline-success me-2">Bag-packing</button>
+        <button type="button" class="btn btn-outline-success me-2">Beach</button>
+        <button type="button" class="btn btn-outline-success me-2">Nature</button>
+        <button type="button" class="btn btn-outline-success me-2">Cultural</button>
+      </div>
+    </div>
+    <div class="mt-5 row col-md-12 container">
+      <div class="card container" style="width:23%; float:left;padding:2px;">
+        <img
+          src="https://a.cdn-hotels.com/gdcs/production15/d288/4474ed70-d272-41b6-9947-b76204f18fa1.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Abu Dhabi</h4>
+          <div class="card-text">United Arab Emirates</h4><br><br>
+            <div class="card-text">Round Trip Form</div>
+            <h3>₹17,600</h3>
+          </div>
+        </div>
+      </div>
+      <div class="card container" style="width:23%; float:left;padding:2px;">
+        <img src="https://a.cdn-hotels.com/gdcs/production172/d459/3af9262b-3d8b-40c6-b61d-e37ae1aa90aa.jpg"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Bangkok</h4>
+          <div class="card-text">Thailand</h4><br><br>
+            <div class="card-text">Round Trip Form</div>
+            <h3>₹18,000</h3>
+          </div>
+        </div>
+      </div>
+      <div class="card container" style="width:23%; float:left;padding:2px;">
+        <img
+          src="https://media.cnn.com/api/v1/images/stellar/prod/200924183413-dubai-9-1.jpg?q=w_1350,h_900,x_125,y_0,c_crop"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Dubai</h4>
+          <div class="card-text">United Arab Emirates</h4><br><br>
+            <div class="card-text">Round Trip Form</div>
+            <h3>₹20,000</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 row col-md-12 container">
+      <div class="card container" style="width:23%; float:left;padding:2px;">
+        <img
+          src="https://media.cnn.com/api/v1/images/stellar/prod/191212182124-04-singapore-buildings.jpg?q=w_3000,h_1996,x_0,y_0,c_fill"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Singapore</h4>
+          <div class="card-text">Singapore</h4><br><br>
+            <div class="card-text">Round Trip Form</div>
+            <h3>₹23,000</h3>
+          </div>
+        </div>
+      </div>
+      <div class="card container" style="width:23%; float:left;padding:2px;">
+        <img
+          src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">London</h4>
+          <div class="card-text">United Kingdom</h4><br><br>
+            <div class="card-text">Round Trip Form</div>
+            <h3>₹60,000</h3>
+          </div>
+        </div>
+      </div>
+      <div class="card container" style="width:23%; float:left;padding:2px;">
+        <img src="https://cdn.britannica.com/25/180825-050-B4693350/Wellington-Harbour-New-Zealand.jpg"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Auckland</h4>
+          <div class="card-text">Newzealand</h4><br><br>
+            <div class="card-text">Round Trip Form</div>
+            <h3>₹70,000</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 row col-md-12 container">
+      <div class="card container" style="width:23%; float:left;padding:2px;">
+        <img
+          src="https://www.seabourn.com/content/dam/sbn65/inventory-assets/ports/cne/bos/BOS1.jpg.image.750.563.low.jpg"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Boston</h4>
+          <div class="card-text">United States</h4><br><br>
+            <div class="card-text">Round Trip Form</div>
+            <h3>₹80,600</h3>
+          </div>
+        </div>
+      </div>
+      <div class="card container" style="width:23%; float:left;padding:2px;">
+        <img src="https://ychef.files.bbci.co.uk/976x549/p07zy3y6.jpg" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Cairo</h4>
+          <div class="card-text">Egypt</h4><br><br>
+            <div class="card-text">Round Trip Form</div>
+            <h3>₹90,600</h3>
+          </div>
+        </div>
+      </div>
+      <div class="card container" style="width:23%; float:left;padding:2px;">
+        <img
+          src="https://imageio.forbes.com/specials-images/imageserve/675172642/pura-ulun-danu-bratan-temple-in-Bali-/960x0.jpg?format=jpg&width=960"
+          class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Bali</h4>
+          <div class="card-text">Indonesia</h4><br><br>
+            <div class="card-text">Round Trip Form</div>
+            <h3>₹95,600</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row col-md-12 mt-5">
+      <div class="col-md-6 mt-5 me-5">
+        <img
+          src="https://www.thetrainline.com/cms/media/1376/uk-london-tower-bridge-river-thames.jpg?mode=crop&width=800&height=800&quality=70"
+          height="500px">
+      </div>
+      <div class="col-md-5 mt-5 pt-5 ms-5 ps-5">
+        <h2>Access Exclusive Features On The Wego App. Download Today!</h2><br><br>
+        <div><b>1.More than 10 useful and engaging features available only for app users.</b></div><br><br>
+        <div><b>2.Explore Page, Popular Destinations, Weekend Getaways, Travel News, etc.</b></div><br>
+        <div>Scan to Download</div><br>
+        <div class="row">
+          <div class="VBNRuv0w6aF9ZLWhzwVY Qxosr5Dwn0btTyWZHKdr"><img loading="lazy"
+              src="https://assets.wego.com/image/upload/h_320,w_320,f_auto,fl_lossy,q_auto:low/v202010050/web/install_banner/qr_code.png"
+              height="100px"><img class="acRBO2aCG5RCzyCTlED0 jZTFD4fPoCS6PhaemNFQ" loading="lazy">
+            <img alt="Apple App Store"
+              src="https://assets.wego.com/image/upload/h_96,w_296,f_auto,fl_lossy,q_auto:low/v202010050/web/install_banner/app_store_btn_en"
+              height="50px" width="100px">
+            <img alt="Android Play Store"
+              src="https://assets.wego.com/image/upload/h_96,w_296,f_auto,fl_lossy,q_auto:low/v202010050/web/install_banner/play_store_btn_en"
+              height="50px" width="100px">
+            <img alt="Huawei App Gallery"
+              src="https://assets.wego.com/image/upload/h_96,w_296,f_auto,fl_lossy,q_auto:low/v202010050/web/install_banner/huawei_store_en"
+              height="50px" width="100px">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 mb-3"><b>Flight To Top Cities</b></div>
+    <div class="row col-md-12">
+      <div class="col-md-3">
+        <div class="mb-2"> Flight to New Delhi</div>
+        <div class="mb-2"> Flight to Kolkata</div>
+        <div> Flight to Lucknow</div>
+      </div>
+      <div class="col-md-3">
+        <div class="mb-2"> Flight to Mumbai</div>
+        <div class="mb-2"> Flight to Patna</div>
+        <div> Flight to Ahmedabad</div>
+      </div>
+      <div class="col-md-3">
+        <div class="mb-2"> Flight to Banglore</div>
+        <div class="mb-2"> Flight to Hyderabad</div>
+      </div>
+      <div class="col-md-3">
+        <div class="mb-2"> Flight to Goa</div>
+        <div class="mb-2"> Flight to Srinagar</div>
+      </div>
+    </div>
+    <div class="row mt-5 mb-3"><b>Flight To Top Countries</b></div>
+    <div class="row col-md-12">
+      <div class="col-md-3">
+        <div class="mb-2"> Flight to UAE</div>
+        <div class="mb-2"> Flight to Thailand</div>
+        <div> Flight to Bahrain</div>
+      </div>
+      <div class="col-md-3">
+        <div class="mb-2"> Flight to Saudi Arabia</div>
+        <div class="mb-2"> Flight to Oman</div>
+        <div> Flight to United Kingdom</div>
+      </div>
+      <div class="col-md-3">
+        <div class="mb-2"> Flight to Kuwait</div>
+        <div class="mb-2"> Flight to United States</div>
+      </div>
+      <div class="col-md-3">
+        <div class="mb-2"> Flight to Qatar</div>
+        <div class="mb-2"> Flight to Canada</div>
+      </div>
+    </div>
+    <div class="row mt-5 mb-3"><b>Hotel in Top Cities</b></div>
+    <div class="row col-md-12">
+      <div class="col-md-3">
+        <div class="mb-2"> Hotel in Goa</div>
+        <div class="mb-2"> Hotel in Hyderabad</div>
+        <div class="mb-2"> Hotel in Manali</div>
+        <div class="mb-2"> Hotel in Bangkok</div>
+        <div> Hotel in Phuket</div>
+      </div>
+      <div class="col-md-3">
+        <div class="mb-2"> Hotel in New Delhi</div>
+        <div class="mb-2"> Hotel in Kolkata</div>
+        <div class="mb-2"> Hotel in Udaipur</div>
+        <div class="mb-2"> Hotel in Bali</div>
+        <div> Hotel in North Male</div>
+      </div>
+      <div class="col-md-3">
+        <div class="mb-2"> Hotel in Mumbai</div>
+        <div class="mb-2"> Hotel in Banglore</div>
+        <div class="mb-2"> Hotel in Dubai</div>
+        <div class="mb-2"> Hotel in Singapore</div>
+        <div> Hotel in Al Madinah</div>
+      </div>
+      <div class="col-md-3">
+        <div class="mb-2"> Hotel in Jaipur</div>
+        <div class="mb-2"> Hotel in Amritsar</div>
+        <div class="mb-2"> Hotel in Pattaya</div>
+        <div class="mb-2"> Hotel in Makkah</div>
+        <div> Hotel in Phuket</div>
+      </div>
+    </div>
+    <div class="row mt-5 mb-3"><b>Hotel in Top Countries</b></div>
+    <div class="row col-md-12">
+      <div class="col-md-3">
+        <div class="mb-2"> Hotel in Thailand</div>
+        <div class="mb-2"> Hotel in Maldives</div>
+        <div class="mb-2"> Hotel in United Kingdom</div>
+        <div class="mb-2"> Hotel in Malaysia</div>
+      </div>
+      <div class="col-md-3">
+        <div class="mb-2"> Hotel in UAE</div>
+        <div class="mb-2"> Hotel in Singapore</div>
+        <div class="mb-2"> Hotel in France</div>
+        <div class="mb-2"> Hotel in Srilanka</div>
+      </div>
+      <div class="col-md-3">
+        <div class="mb-2"> Hotel in Saudi Arabia</div>
+        <div class="mb-2"> Hotel in Vietnam</div>
+        <div class="mb-2"> Hotel in United States</div>
+        <div class="mb-2"> Hotel in China</div>
+      </div>
+      <div class="col-md-3">
+        <div class="mb-2"> Hotel in Indonesia</div>
+        <div class="mb-2"> Hotel in Nepal</div>
+        <div class="mb-2"> Hotel in Switzerland</div>
+      </div>
+    </div>
+  </div>
+  <div class="row col-md-12 bg-dark text-white container-fluid mt-5">
+    <div class="col-md-3 p-5">
+      <h4>COMPANY</h4>
+      <div class="mb-2">About Wego</div>
+      <div class="mb-2">Press</div>
+      <div class="mb-2">Careers</div>
+      <div class="mb-2">Contact Us</div>
+    </div>
+    <div class="col-md-3 p-5">
+      <h4>LEARN MORE</h4>
+      <div class="mb-2">Book on Wego</div>
+      <div class="mb-2">Affiliates</div>
+      <div class="mb-2">Advertise</div>
+      <div class="mb-2">Hoteliers</div>
+      <div class="mb-2">Data Policy</div>
+      <div class="mb-2">Terms</div>
+    </div>
+    <div class="col-md-3 p-5">
+      <h4>EXPLORE</h4>
+      <div class="mb-2">Airport Directory</div>
+      <div class="mb-2">Airlines Directory</div>
+      <div class="mb-2">Flight Schedules</div>
+      <div class="mb-2">Hotel Chains</div>
+    </div>
+    <div class="col-md-3 p-5">
+      <h4>DOWNLOAD</h4>
+      <div class="mb-2">Wego App (iOS)</div>
+      <div class="mb-2">Wego App (Android)</div>
+    </div>
+    <hr>
+    <div class="row col-md-12 mb-5">
+      <div> © 2023 Wego Pte Ltd
+        <i class="fa-brands fa-instagram" style=" float: right; margin-left: 2%;"></i>
+        <i class="fa-brands fa-linkedin-in" style=" float: right; margin-left: 2%;"></i>
+        <i class="fa-brands fa-twitter" style="float: right; margin-left: 2%;"></i>
+        <i class="fa-brands fa-facebook" style="float: right; margin-left: 2%;"></i>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
