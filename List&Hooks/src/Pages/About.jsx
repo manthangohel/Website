@@ -1,0 +1,40 @@
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+
+function About() {
+  return (
+    <div>
+  <section className="about_section layout_padding ">
+    <div className="container  ">
+      <div className="row">
+        <div className="col-md-6">
+          <div className="detail-box">
+            <div className="heading_container">
+              <h2>
+                About Our Company
+              </h2>
+            </div>
+            <p>
+              Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web pagend web page editors now use Lorem Ipsum as their default model text, </p>
+            <NavLink to="#">
+              <span>
+                Read More
+              </span>
+              <img src="images/color-arrow.png" alt />
+            </NavLink>
+          </div>
+        </div>
+        <div className="col-md-6">
+          <div className="img-box">
+            <img src="images/about-img.png" alt />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+  )
+}
+
+export default About
