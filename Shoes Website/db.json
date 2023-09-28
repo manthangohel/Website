@@ -1,0 +1,123 @@
+{
+  "user": [
+    {
+      "id": "1692936114383",
+      "firstname": "Aman",
+      "lastname": "Mansuri",
+      "email": "aman@gmail.com",
+      "mobile": "4545755789"
+    },
+    {
+      "id": "1693054208221",
+      "firstname": "amn",
+      "lastname": "man",
+      "email": "aman@gmail.com",
+      "mobile": "988877445"
+    },
+    {
+      "id": "1693054618134",
+      "firstname": "manthan",
+      "lastname": "patel",
+      "email": "manpatel@gmail.com",
+      "mobile": "1234567891"
+    },
+    {
+      "id": "1693195571722",
+      "firstname": "soham",
+      "lastname": "patel",
+      "email": "soham@gmail.com",
+      "mobile": "1234567891",
+      "password": "123456",
+      "undefined": "12345678"
+    },
+    {
+      "id": "1694520323717",
+      "firstname": "Gohel",
+      "lastname": "Manthan",
+      "mobile": "7435963624",
+      "email": "man1812@gmail.com",
+      "password": "456789"
+    },
+    {
+      "id": "1695439800998",
+      "firstname": "meet",
+      "lastname": "gohel",
+      "mobile": "8511955696",
+      "email": "meet12@gmail.com",
+      "password": "123456789"
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "email": "man@gmail.com",
+      "passsword": 123
+    }
+  ],
+  "Contact": [
+    {
+      "id": 1,
+      "firstname": "Manthan",
+      "lastname": "Gohel",
+      "email": "man@gmail.com",
+      "subject": "bsddlgkjdldhgshd",
+      "message": "Your Product Is Good"
+    },
+    {
+      "id": "1692160816447",
+      "firstname": "meet",
+      "lastname": "gohel",
+      "email": "meet@gmail.com",
+      "subject": "nike shoes related",
+      "message": "this product is geniun"
+    },
+    {
+      "id": "1693484781993",
+      "firstname": "Manthan",
+      "lastname": "Gohel",
+      "email": "man123@gmail.com",
+      "subject": "wref",
+      "message": "sdfccewewewwwewweweweewewwe"
+    },
+    {
+      "id": "1693722628506",
+      "firstname": "Dharmik",
+      "lastname": "Pate;l",
+      "email": "dk@gmail.com",
+      "subject": "asdfdgtfhgujhkijgfsdghjgfdghjgfdgfh",
+      "message": "afesrdyygkujedvfghjgfdfghjgjrs"
+    }
+  ],
+  "Category": [
+    {
+      "id": 2,
+      "name": "Women"
+    }
+  ],
+  "Product": [
+    {
+      "id": "1694067330766",
+      "name": "Shoes",
+      "des": "dchjjhdjhsghsdgdhgds",
+      "price": "Rs1200",
+      "img_link": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+      "prod_cat": "Women"
+    },
+    {
+      "id": "1694068513068",
+      "name": "Campus",
+      "des": "Campus Casual Shoes",
+      "price": "Rs1500",
+      "img_link": "https://th.bing.com/th/id/OIP.tKPFvF-gJICefPVqBE0ZagHaFK?pid=ImgDet&rs=1",
+      "prod_cat": "Women"
+    },
+    {
+      "id": "1694069512107",
+      "name": "Campus",
+      "des": "skdfhkgdsdsjdfkjhfhf",
+      "price": "2000",
+      "img_link": "https://n4.sdlcdn.com/imgs/g/k/q/Campus-5G-478C-Kids-Shoes-SDL073271122-1-a24c6.jpeg",
+      "prod_cat": "Women"
+    }
+  ]
+}
